@@ -1,15 +1,16 @@
 package Day_7;
 
-public class ArrayListDemo {
+public class Q1_Main {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Student std=new Student();
+		StudentDAO std=new StudentDAO();
 		std.setNames();
 		std.printName();
-		std.searchName(0);
 		std.searchName("huy");
+		std.searchName(0);
 		std.removeName("huy");
+		std.printName();
 	}
 
 }
