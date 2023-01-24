@@ -7,20 +7,20 @@ import java.util.Scanner;
 import javax.swing.event.ListDataEvent;
 
 public class StudentDAO {
-	ArrayList<Student> stArray = new ArrayList<Student>();
+	ArrayList<Student_Q1> stArray = new ArrayList<Student_Q1>();
 	Scanner sc=new Scanner(System.in);
 	
 	public void setNames() {
 		System.out.println("enter name");
 		String name=sc.next();
-		Student st=new Student(1, name, 10);
+		Student_Q1 st=new Student_Q1(1, name, 10);
 		stArray.add(st);
 		System.out.println("inserted");
 	}
 	public void searchName(String name) {
-		for(Student s : stArray) {
+		for(Student_Q1 s : stArray) {
 			if(s.getStudentName().compareTo(name) == 0) {
-				System.out.println("founded string"+name );
+				System.out.println("founded string: "+name );
 				break;
 			}
 		}
@@ -33,12 +33,12 @@ public class StudentDAO {
 		}
 	}         
 	public void printName() {
-		for(Student s : stArray) {
+		for(Student_Q1 s : stArray) {
 			System.out.println(s.getStudentID()+" "+s.getStudentName()+" "+s.getStudentAge() );
 		}
 	}
 	public void removeName(String stuName) {
-		Iterator<Student> itRemove=stArray.iterator();
+		Iterator<Student_Q1> itRemove=stArray.iterator();
 		while(itRemove.hasNext()) {
 			if(itRemove.next().getStudentName().compareTo(stuName)==0) {
 				itRemove.remove();

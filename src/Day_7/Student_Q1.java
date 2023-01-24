@@ -1,7 +1,8 @@
 package Day_7;
 
-public class Student {
+public class Student_Q1 {
 	 int studentID;
+	 String address;
 	 String studentName;
 	 int studentAge;
 	public int getStudentID() {
@@ -22,7 +23,7 @@ public class Student {
 	public void setStudentAge(int studentAge) {
 		this.studentAge = studentAge;
 	}
-	public Student(int studentID, String studentName, int studentAge) {
+	public Student_Q1(int studentID, String studentName, int studentAge) {
 		super();
 		this.studentID = studentID;
 		this.studentName = studentName;
